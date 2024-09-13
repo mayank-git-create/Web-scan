@@ -1,0 +1,22 @@
+Firefox
+
+http://192.168.64.3/network.php
+
+Server Timestamp:08:34:19am
+
+# Nmap 7.80 scan initiated Fri Aug 9 08:30:02 2024 as: nmap -oN /var/www/html/nmap.html 192.168.64.3/24 Nmap scan report for _gateway (192.168.64.1) Host is up (0.00040s latency).
+
+Not shown: 997 closed ports PORT STATE SERVICE 53/tcp open domain 5000/tcp open upnp 7000/tcp open afs3-fileserver MAC Address: A6:83:E7:22:5F:64 (Unknown)
+
+Nmap scan report for ubuntu (192.168.64.3) Host is up (0.000073s latency).
+
+Not shown: 999 closed ports PORT STATE SERVICE 80/tcp open http
+
+# Nmap done at Fri Aug
+
+9 08:30:05 2024 -- 256 IP addresses (2 hosts up) scanned in 4.03 seconds
+
+1 of 1
+
+9/8/24, 4:39 pm
+

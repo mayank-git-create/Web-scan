@@ -1,40 +1,3 @@
-# Install nmap
-ubuntu@ubuntu-utm:~$ sudo apt-get install nmap
-[sudo] password for ubuntu: 
-Reading package lists... Done
-Building dependency tree       
-Reading state information... Done
-nmap is already the newest version.
-0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
-# Install apache2
-ubuntu@ubuntu-utm:~$ sudo apt-get install apache2
-Reading package lists... Done
-Building dependency tree       
-Reading state information... Done
-apache2 is already the newest version.
-0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
-# Install php5
-ubuntu@ubuntu-utm:~$ sudo apt-get install php5
-Reading package lists... Done
-Building dependency tree       
-Reading state information... Done
-php5 is already the newest version.
-0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
-ubuntu@ubuntu-utm:~$ php -v
-PHP 5.5.9-1ubuntu4.29 (cli) (built: Apr 22 2019 18:33:52) 
-Copyright (c) 1997-2014 The PHP Group
-Zend Engine v2.5.0, Copyright (c) 1998-2014 Zend Technologies
-    with Zend OPcache v7.0.3, Copyright (c) 1999-2014, by Zend Technologies
-# Restart apache2
-ubuntu@ubuntu-utm:~$ sudo service apache2 restart
- * Restarting web server apache2                                                
-# Permissions
-ubuntu@ubuntu-utm:~$ sudo chown ubuntu /var/www/html
-ubuntu@ubuntu-utm:~$ sudo chmod 777 /var/www/html
-ubuntu@ubuntu-utm:~$ sudo crontab -e
-No modification made
-
-ubuntu@ubuntu-utm:~$ /bin/nano
 <? php
 
 echo "Server Timestamp:";
@@ -54,4 +17,41 @@ PORT   STATE SERVICE
 80/tcp open  http
 
 # Nmap done at Wed Sep  4 03:50:03 2024 -- 1 IP address (1 host up) scanned in 1.68 seconds
+
+
+ubuntu@ubuntu-utm:~$ sudo apt-get install nmap
+[sudo] password for ubuntu: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+nmap is already the newest version.
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+
+ubuntu@ubuntu-utm:~$ sudo apt-get install apache2
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+apache2 is already the newest version.
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+
+ubuntu@ubuntu-utm:~$ sudo apt-get install php5
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+php5 is already the newest version.
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+ubuntu@ubuntu-utm:~$ php -v
+PHP 5.5.9-1ubuntu4.29 (cli) (built: Apr 22 2019 18:33:52) 
+Copyright (c) 1997-2014 The PHP Group
+Zend Engine v2.5.0, Copyright (c) 1998-2014 Zend Technologies
+    with Zend OPcache v7.0.3, Copyright (c) 1999-2014, by Zend Technologies
+ubuntu@ubuntu-utm:~$ sudo service apache2 restart
+ * Restarting web server apache2                                                AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+                                                                         [ OK ]
+ubuntu@ubuntu-utm:~$ sudo chown ubuntu /var/www/html
+ubuntu@ubuntu-utm:~$ sudo chmod 777 /var/www/html
+ubuntu@ubuntu-utm:~$ sudo crontab -e
+No modification made
+
+ubuntu@ubuntu-utm:~$ /bin/nano
 
