@@ -45,13 +45,25 @@ include ("nmap.html");
 echo "</pre>"
 ?>
 
+Firefox
 
-# Nmap 6.40 scan initiated Wed Sep  4 03:50:01 2024 as: nmap -oN /var/www/html/nmap.html 10.0.2.15
-Nmap scan report for 10.0.2.15
-Host is up (0.0000080s latency).
-Not shown: 999 closed ports
-PORT   STATE SERVICE
-80/tcp open  http
+http://XXX.XXX.XX.X/network.php
 
-# Nmap done at Wed Sep  4 03:50:03 2024 -- 1 IP address (1 host up) scanned in 1.68 seconds
+Server Timestamp:08:34:19am
+
+# Nmap 7.80 scan initiated Fri Aug 9 08:30:02 2024 as: nmap -oN /var/www/html/nmap.html XXX.XXX.XX.X/24 Nmap scan report for _gateway (XXX.XXX.XX.X) Host is up (0.00040s latency).
+
+Not shown: 997 closed ports PORT STATE SERVICE 53/tcp open domain 5000/tcp open upnp 7000/tcp open afs3-fileserver MAC Address: A6:83:E7:22:5F:64 (Unknown)
+
+Nmap scan report for ubuntu (XXX.XXX.XX.X) Host is up (0.000073s latency).
+
+Not shown: 999 closed ports PORT STATE SERVICE 80/tcp open http
+
+# Nmap done at Fri Aug
+
+9 08:30:05 2024 -- 256 IP addresses (2 hosts up) scanned in 4.03 seconds
+
+1 of 1
+
+9/8/24, 4:39 pm
 
